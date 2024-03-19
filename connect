@@ -1,0 +1,8 @@
+---
+- name: Check connectivity with localhost
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: Ping localhost
+      ping:
